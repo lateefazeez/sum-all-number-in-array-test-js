@@ -16,4 +16,8 @@ describe('sum', function() {
   it('handles even more levels of nesting fine', () => {
     expect(sumItems([[[5], [[[4]]], [[3], 2]], 1, []])).to.equal(15);
   });
+  it('handles even a worse case scenario...LOL', () => {
+    expect(sumItems([[[[[[[[[[[[[1]]]]]]]]]]]]])).to.equal(1);
+  });
+ 
 });
